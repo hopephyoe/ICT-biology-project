@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photosynthesis Process</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Photosynthesis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quiz" id="quiz-link" style="display:none;">Quiz</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Section -->
+  <section id="login" class="container mt-5">
+    <h2 class="text-center">Login to Start</h2>
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <div id="login-error" class="text-danger mt-3" style="display:none;">Invalid username or password!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photosynthesis Section -->
+  <section class="container mt-5" id="photosynthesis" style="display:none;">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">What is Photosynthesis?</h2>
+        <p>Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It occurs in the chloroplasts of plant cells, where sunlight is absorbed by chlorophyll and other pigments. The process can be summarized in the following steps:</p>
+
+        <h4>Steps of Photosynthesis:</h4>
+        <ul>
+          <li><strong>Step 1:</strong> Light absorption by chlorophyll.</li>
+          <li><strong>Step 2:</strong> Conversion of light energy into chemical energy.</li>
+          <li><strong>Step 3:</strong> Formation of glucose (C₆H₁₂O₆).</li>
+          <li><strong>Step 4:</strong> Oxygen is released as a byproduct.</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Photosynthesis_diagram.svg" alt="Photosynthesis Process" class="img-fluid mx-auto d-block">
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="container mt-5" style="display:none;">
+    <h3 class="text-center">Photosynthesis Quiz</h3>
+    <div class="quiz-container">
+      <div id="question1">
+        <p>1. What is the main product of photosynthesis?</p>
+        <button class="btn btn-primary answer" onclick="checkAnswer('glucose')">Glucose</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('oxygen')">Oxygen</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('water')">Water</button>
+      </div>
+      <div id="question2">
+        <p>2. Which organelle is responsible for photosynthesis in plant cells?</p>
+        <button class="btn btn-primary answer" onclick="checkAnswer('mitochondria')">Mitochondria</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('chloroplast')">Chloroplast</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('nucleus')">Nucleus</button>
+      </div>
+      <div id="result" class="mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Photosynthesis Website</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Photosynthesis</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quiz">Quiz</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Photosynthesis Section -->
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">What is Photosynthesis?</h2>
+        <p>Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. It occurs in the chloroplasts of plant cells, where sunlight is absorbed by chlorophyll and other pigments. The process can be summarized in the following steps:</p>
+
+        <h4>Steps of Photosynthesis:</h4>
+        <ul>
+          <li><strong>Step 1:</strong> Light absorption by chlorophyll.</li>
+          <li><strong>Step 2:</strong> Conversion of light energy into chemical energy.</li>
+          <li><strong>Step 3:</strong> Formation of glucose (C₆H₁₂O₆).</li>
+          <li><strong>Step 4:</strong> Oxygen is released as a byproduct.</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Photosynthesis_diagram.svg" alt="Photosynthesis Process" class="img-fluid mx-auto d-block">
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="container mt-5">
+    <h3 class="text-center">Photosynthesis Quiz</h3>
+    <div class="quiz-container">
+      <div id="question1">
+        <p>1. What is the main product of photosynthesis?</p>
+        <button class="btn btn-primary answer" onclick="checkAnswer('glucose')">Glucose</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('oxygen')">Oxygen</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('water')">Water</button>
+      </div>
+      <div id="question2">
+        <p>2. Which organelle is responsible for photosynthesis in plant cells?</p>
+        <button class="btn btn-primary answer" onclick="checkAnswer('mitochondria')">Mitochondria</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('chloroplast')">Chloroplast</button>
+        <button class="btn btn-primary answer" onclick="checkAnswer('nucleus')">Nucleus</button>
+      </div>
+      <div id="result" class="mt-4"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Photosynthesis Website</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

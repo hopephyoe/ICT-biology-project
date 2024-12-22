@@ -1,0 +1,57 @@
+.content{
+    width: 150%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/cot2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 88%;
+}
+.dropdown button{
+    font-size: 30px;
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    font-size: larger;
+    display: block;
+    color: black;
+    text-decoration: solid;
+    padding: 10px 15px;  
+}
+.dropdown1{
+    display: none;
+    background-color: hsl(180, 100%, 80%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0.8%);
+}
+.dropdown2{
+    background-color: hwb(157 20% 0.9%);
+}
+.dropdown3{
+    background-color: hsl(76, 100%, 80%);
+}
+.dropdown4{
+    background-color: hsl(90, 77%, 78%);
+}
+.dropdown5{
+    background-color: hsl(25, 75%, 80%);
+}
+.dropdown6{
+    background-color: hsl(77, 81%, 30%);
+}
+.dropdown:hover .dropdown1{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 100%, 80%);
+}
+.dropdown a:hover{
+    background-color: hsl(240, 100%, 80%);
+}
+.dropdown{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/bg2.jpg);
+}
